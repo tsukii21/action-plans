@@ -1,10 +1,12 @@
-import { Button, ThemeProvider } from "@mui/material"
+import { CssBaseline, ThemeProvider } from "@mui/material"
+import Dashboard from "./components/Dashboard"
 import theme from "./config/theme"
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Button>Hello</Button>
+      <CssBaseline />
+      <Dashboard />
     </ThemeProvider>
   )
 }
